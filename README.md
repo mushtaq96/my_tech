@@ -6,27 +6,20 @@ installed **fish** - type *fish_config* on cli and follow
 
 installed **sublime text 3**
 
-sudo apt install python3-pip
-pip3 install jupyter
-the type 'jupyter notebook'
-either use anaconda or pip for jupyter
-installed Anaconda on Ubuntu
+installed **pip3** 
+
+installed **anaconda** to run *jupyter notebook*
 
 
 
 
 
 
-
-
-
-
-
-# interesting things to check out:-
+## interesting things to check out:-
 https://tutorials.ubuntu.com/tutorial/basic-snap-usage#0
 
 
-# important things to remember:-
+## important things to remember:-
 
 1. Where are update and apt-get files are stored?
 	- /var/cache/apt/archives
