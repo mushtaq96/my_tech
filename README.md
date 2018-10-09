@@ -29,3 +29,13 @@ https://tutorials.ubuntu.com/tutorial/basic-snap-usage#0
 
 2. conda has some techgnical issues when running with fish shell.This link helps,
 https://stackoverflow.com/questions/34280113/add-conda-to-path-in-fish/34280406#34280406
+
+3. Much needed extentions(firefox version)
+	Https everywhere
+	Grammarly
+	Wikiwand
+	ad block plus
+	momentum
+	hoxx vpn
+	onetab
+	english popup dictionary
