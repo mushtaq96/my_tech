@@ -9,6 +9,7 @@ installed **sublime text 3**
 installed **pip3** 
 
 installed **anaconda** to run *jupyter notebook*
+install gnome tweaks
 
 
 
