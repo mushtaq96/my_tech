@@ -44,3 +44,4 @@ https://stackoverflow.com/questions/34280113/add-conda-to-path-in-fish/34280406#
 	english popup dictionary
 	
 	web search navigator(chrome) - keyboard shortcuts for surfing the web 
+	https://github.com/infokiller/web-search-navigator
