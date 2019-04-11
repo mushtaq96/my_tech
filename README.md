@@ -9,7 +9,9 @@ installed **sublime text 3**
 installed **pip3** 
 
 installed **anaconda** to run *jupyter notebook*
+
 install gnome tweaks
+
 
 
 
@@ -40,3 +42,5 @@ https://stackoverflow.com/questions/34280113/add-conda-to-path-in-fish/34280406#
 	hoxx vpn
 	onetab
 	english popup dictionary
+	
+	web search navigator(chrome) - keyboard shortcuts for surfing the web 
