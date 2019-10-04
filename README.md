@@ -12,7 +12,7 @@ installed **anaconda** to run *jupyter notebook*
 
 install gnome tweaks
 
-
+sudo apt install bucklespring / use 'snap' - nostalgia
 
 
 
