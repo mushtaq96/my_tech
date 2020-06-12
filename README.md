@@ -1,4 +1,4 @@
-# my_tech
+# my_tech(ubuntu 18 machine)
 
 installed **terminator**
 
