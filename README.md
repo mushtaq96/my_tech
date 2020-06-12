@@ -14,7 +14,7 @@ install gnome tweaks
 
 sudo apt install bucklespring / use 'snap' - nostalgia
 
-
+autoenv - A pip package for ease of python environment activations
 
 
 
