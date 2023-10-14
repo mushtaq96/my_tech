@@ -70,3 +70,10 @@ https://stackoverflow.com/questions/34280113/add-conda-to-path-in-fish/34280406#
 	In your case, you could replace `npm start` with `yarn start` and `npm build` with `yarn build`, if you want to use Yarn consistently. Similarly, if you want to use npm, you could replace `yarn install` with `npm install`. Just make sure to delete the incorrect lock file (`yarn.lock` if you're using npm, or `package-lock.json` if you're using Yarn) before you install the dependencies.
 
 	You can check if a module is installed in your project by looking at the dependencies section of your package.json file. If the module is listed there, it means it’s installed.
+
+6. Port Conflicts
+	Terminate the Existing Process: If you prefer to use port 3000, you’ll need to terminate the existing process that’s using it. The warning message indicates that the process ID (pid) is 6648. You can terminate this process by running kill -9 6648 in your terminal.
+	
+	Find and Terminate the Process Using the Port: If you don’t know the pid, you can find out which process is using port 3000 with the command lsof -i :3000. This will give you a list of processes using the port, from which you can find the pid and terminate it with the kill command.
+	
+	After resolving the port conflict, try running your application again.
