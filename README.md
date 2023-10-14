@@ -77,3 +77,13 @@ https://stackoverflow.com/questions/34280113/add-conda-to-path-in-fish/34280406#
 	Find and Terminate the Process Using the Port: If you don’t know the pid, you can find out which process is using port 3000 with the command lsof -i :3000. This will give you a list of processes using the port, from which you can find the pid and terminate it with the kill command.
 	
 	After resolving the port conflict, try running your application again.
+
+7. VS Code
+   In Visual Studio Code, you can collapse all code blocks in the current file using the following steps:
+
+	1. Press `Ctrl + K` and then `Ctrl + 0` (the zero number key) to fold all. To unfold all, you can press `Ctrl + K` and then `Ctrl + J`.
+
+	If you want to collapse all directories in the Explorer pane, you can use the following shortcut²:
+
+		1. Press `Ctrl + Shift + E` to focus on the Explorer pane.
+		2. Press `Ctrl + Left Arrow` to collapse all directories.
