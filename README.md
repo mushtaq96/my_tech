@@ -87,3 +87,10 @@ https://stackoverflow.com/questions/34280113/add-conda-to-path-in-fish/34280406#
 
 		1. Press `Ctrl + Shift + E` to focus on the Explorer pane.
 		2. Press `Ctrl + Left Arrow` to collapse all directories.
+
+
+
+# Websites to revisit
+
+https://knowingmachines.org/models-all-the-way#section5
+
