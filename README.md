@@ -90,7 +90,10 @@ https://stackoverflow.com/questions/34280113/add-conda-to-path-in-fish/34280406#
 
 
 
-# Websites to revisit
+# Interesting Websites to revisit
 
 https://knowingmachines.org/models-all-the-way#section5
+https://books.google.com/ngrams/
+https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web
+https://static-assets.codecademy.com/Courses/intro-to-llms/next_token_prediction/llm_next_token_prediction.html
 
