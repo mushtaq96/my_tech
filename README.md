@@ -88,7 +88,8 @@ https://stackoverflow.com/questions/34280113/add-conda-to-path-in-fish/34280406#
 		1. Press `Ctrl + Shift + E` to focus on the Explorer pane.
 		2. Press `Ctrl + Left Arrow` to collapse all directories.
 
-
+8. Important Commands
+   -  tree -I "node_modules|env|build|dist"
 
 # Interesting Websites to revisit
 
