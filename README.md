@@ -90,8 +90,8 @@ https://stackoverflow.com/questions/34280113/add-conda-to-path-in-fish/34280406#
 
 8. Important Commands
    -  tree -I "node_modules|env|build|dist"
-
-# Interesting Websites to revisit
+   - Find the process using port 8000, ```lsof -i :8000```
+   - Kill the process (replace 12345 with the actual PID) ```kill -9 12345```
 
 https://knowingmachines.org/models-all-the-way#section5
 https://books.google.com/ngrams/
