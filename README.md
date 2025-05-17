@@ -92,6 +92,18 @@ https://stackoverflow.com/questions/34280113/add-conda-to-path-in-fish/34280406#
    -  tree -I "node_modules|env|build|dist"
    - Find the process using port 8000, ```lsof -i :8000```
    - Kill the process (replace 12345 with the actual PID) ```kill -9 12345```
+  
+9. SSL Corporate Errors: Just open the file and add:
+```
+export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+```
+Then reload your shell or restart the terminal:
+`source ~/.bashrc`
+What happens after this?
+Python and requests will find the right certificates.
+SSL connections (like downloading packages from PyPI) will succeed.
+You won’t get those annoying SSL certificate errors anymore.
 
 https://knowingmachines.org/models-all-the-way#section5
 https://books.google.com/ngrams/
