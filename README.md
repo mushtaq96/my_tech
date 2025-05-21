@@ -110,7 +110,9 @@ https://books.google.com/ngrams/
 https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web
 https://static-assets.codecademy.com/Courses/intro-to-llms/next_token_prediction/llm_next_token_prediction.html
 
+Hackathon guide
+1. https://www.napkin.ai/ - get visuals from text
 
-Uncommon Portals 
+Uncommon Job Portals 
 https://www.cyberforum.de/jobboerse
 https://join-nxtgn.com/jobportal/
