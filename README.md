@@ -116,3 +116,4 @@ Hackathon guide
 Uncommon Job Portals 
 https://www.cyberforum.de/jobboerse
 https://join-nxtgn.com/jobportal/
+https://jobs.developer-media.de/Suchergebnis.html?jsjn=ai&jsjnid=&jsjo=&jsjoid=
