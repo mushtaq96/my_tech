@@ -112,6 +112,7 @@ https://static-assets.codecademy.com/Courses/intro-to-llms/next_token_prediction
 
 Hackathon guide
 1. https://www.napkin.ai/ - get visuals from text
+2. https://gitdiagram.com/ - get visual from code repos
 
 Uncommon Job Portals 
 https://www.cyberforum.de/jobboerse
