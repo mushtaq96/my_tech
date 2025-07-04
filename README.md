@@ -117,6 +117,9 @@ Hackathon guide
 Blockchain
 1. https://mempool.space/de/
 2. https://v3.antpool.com/home
+3. https://bitnodes.io/nodes/live-map/
+4. https://www.biteaddress.org/
+5. 
 
 Uncommon Job Portals 
 https://www.cyberforum.de/jobboerse
