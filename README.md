@@ -114,6 +114,10 @@ Hackathon guide
 1. https://www.napkin.ai/ - get visuals from text
 2. https://gitdiagram.com/ - get visual from code repos
 
+Blockchain
+1. https://mempool.space/de/
+2. https://v3.antpool.com/home
+
 Uncommon Job Portals 
 https://www.cyberforum.de/jobboerse
 https://join-nxtgn.com/jobportal/
