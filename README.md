@@ -17,13 +17,19 @@ sudo apt install bucklespring / use 'snap' - nostalgia
 autoenv - A pip package for ease of python environment activations
 
 #### Exclude specific patterns filtering option tree command
+```bash
 tree -I "node_modules|__pycache__"
-
+```
 #### Check individual large files
 Identify if any single file is very large (e.g., big JSON, huge TypeScript files) and consider excluding or summarizing them.
 You can check file sizes with:
 ```bash
 find . -type f -exec du -h {} + | sort -rh | head -20
+```
+####  Explicitly filtering for fewer tokens 
+```bash
+code2prompt . --exclude="node_modules,.venv,__pycache__,*.svg,*.ico,
+package-lock.json,public,*.json,*.css"
 ```
 
 ## Interesting things to check out:-
