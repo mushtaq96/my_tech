@@ -16,7 +16,15 @@ sudo apt install bucklespring / use 'snap' - nostalgia
 
 autoenv - A pip package for ease of python environment activations
 
+#### Exclude specific patterns filtering option tree command
+tree -I "node_modules|__pycache__"
 
+#### Check individual large files
+Identify if any single file is very large (e.g., big JSON, huge TypeScript files) and consider excluding or summarizing them.
+You can check file sizes with:
+```bash
+find . -type f -exec du -h {} + | sort -rh | head -20
+```
 
 ## Interesting things to check out:-
 https://tutorials.ubuntu.com/tutorial/basic-snap-usage#0
