@@ -28,8 +28,7 @@ find . -type f -exec du -h {} + | sort -rh | head -20
 ```
 ####  Explicitly filtering for fewer tokens 
 ```bash
-code2prompt . --exclude="node_modules,.venv,__pycache__,*.svg,*.ico,
-package-lock.json,public,*.json,*.css"
+code2prompt . --exclude="node_modules/**,.venv/**,__pycache__/**,public/**,*.svg,*.ico,package-lock.json" .
 ```
 
 ## Interesting things to check out:-
