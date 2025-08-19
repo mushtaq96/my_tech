@@ -106,34 +106,44 @@ Keep all feedback concise, practical, and focused on rapid oral progress.
 
 ### Top 1% JD→CV Optimization Prompt (ATS + Truth + No Credibility Risks)
 
-I will paste a full job description (in German). Please:
+I will paste a full job description (in German) and my current resume. Please:
 
-1. Identify missing or weak keywords in my CV compared to the JD.
+1. Keyword Gap Analysis
+- Identify missing or weak keywords in my CV compared to the JD.
+- Use the exact German keywords from the JD (important for ATS).
 
-2. Suggest realistic ways I can incorporate them truthfully into my resume.
+2. Safe Incorporation Strategy
 
-3. Do not insert technologies, frameworks, or methodologies that conflict with what I’ve actually used (e.g., don’t mix Spring Boot with ASP.NET, or Bootstrap with React/Next.js). If the JD lists something I don’t know, instead suggest how I can highlight transferable equivalents or adjacent experience.
+- Suggest realistic ways I can incorporate them truthfully into my CV.
+- Do not invent or assume technologies I haven’t used.
+- If the JD lists something I don’t know, suggest how to highlight transferable equivalents or adjacent experience.
+- Never combine mutually exclusive technologies in the same project bullet (e.g., Supabase vs. MongoDB, React vs. Angular, Kubernetes vs. pure Serverless). If unsure, give me Option A/Option B versions and let me choose.
 
-4. Use the exact German keywords from the JD (important for ATS), but explain all reasoning and strategy to me in English.
+3. Conflict & Timeline Guardrails
 
-5. Organize results into 3 clear groups:
+- Respect timeline accuracy (e.g., Supabase only from 2021 onwards).
+- Before final output, do a quick conflict check for contradictory tech stacks. If there’s a risk, flag it and provide alternatives.
+- If a technology is relevant but not tied to a specific project, recommend placing it in Skills or Summary instead.
 
-    (a) Direct matches → Skills/keywords I already have but should emphasize more.
+4. Organize results into 3 clear groups:
+(a) Direct matches → Skills/keywords I already have but should emphasize more.
+(b) Transferable equivalents → Not an exact match, but I have something close I can truthfully frame.
+(c) True gaps → Skills/keywords I cannot fill. Mark them clearly so I don’t fake them but can prepare for interviews.
 
-    (b) Transferable equivalents → I don’t have the exact thing, but I have something close that I can truthfully frame.
+5. Placement Guidance
+- For each keyword/phrase, recommend the best section of my CV where I should place it (Summary, Skills, Experience, Education, Cover Letter).
 
-    (c) True gaps → Skills/keywords I cannot fill; mark them clearly so I don’t try to fake them, but so I can prepare to discuss them in interviews.
+6. Optimization Rules
+- Optimize suggestions for ATS keyword scanning but keep them natural for human recruiters.
+- Always prioritize truth over keyword stuffing.
+- You may suggest slight embellishments (e.g., framing adjacent experience more strongly), but you must:
+  (a) Tell me exactly which part is being embellished.
+  (b) Confirm whether it’s realistic for me to self-learn quickly so I can defend it confidently in an interview.
 
-6. For each keyword/phrase, also recommend the best section of my CV (summary, skills, experience, education, or cover letter) where I should place it for maximum effect.
-
-7. Optimize suggestions for ATS keyword scanning, but also make sure they read naturally to a human recruiter.
-
-
-Absolutely! Here are HIGH-IMPACT, ready-to-use prompts designed especially for rapid **telc B2 oral exam** practice—tailored for LLMs with audio/chat. These prompts maximize vocabulary, fluency, grammar (including cases!), and authenticity. Use them directly (as text or voice) any time, in any new session, for super-effective practice.
-
-***
 
 ## Top 1% Prompts for telc B2 Speaking Practice with LLMs
+
+Absolutely! Here are HIGH-IMPACT, ready-to-use prompts designed especially for rapid **telc B2 oral exam** practice—tailored for LLMs with audio/chat. These prompts maximize vocabulary, fluency, grammar (including cases!), and authenticity. Use them directly (as text or voice) any time, in any new session, for super-effective practice.
 
 ### 1. General Speaking Simulation
 
