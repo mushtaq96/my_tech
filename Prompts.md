@@ -149,6 +149,8 @@ I will paste a full job description (in German) and my current resume. Please:
 - Updated CV bullets / summary ready for ATS & human recruiters.
 - Executive summary (6 lines, German-native phrasing).
 
+The following is a German job description and my modified German CV. Begin by analyzing them. Keep all German keywords, phrases, and technical terms intact, but explain and provide recommendations in English.
+
 
 ## Top 1% Prompts for telc B2 Speaking Practice with LLMs
 
