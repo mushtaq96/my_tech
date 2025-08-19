@@ -110,14 +110,17 @@ I will paste a full job description (in German) and my current resume. Please:
 
 1. Keyword Gap Analysis
 - Identify missing or weak keywords in my CV compared to the JD.
-- Use the exact German keywords from the JD (important for ATS).
+- Identify Direct matches / Transferable equivalents / True gaps using exact German JD keywords.
+- For each keyword, suggest the best CV section (Summary, Skills, Experience, Education, Cover Letter) in a single table.
 
 2. Safe Incorporation Strategy
 
 - Suggest realistic ways I can incorporate them truthfully into my CV.
 - Do not invent or assume technologies I haven’t used.
+- Flag unrealistic claims.
 - If the JD lists something I don’t know, suggest how to highlight transferable equivalents or adjacent experience.
 - Never combine mutually exclusive technologies in the same project bullet (e.g., Supabase vs. MongoDB, React vs. Angular, Kubernetes vs. pure Serverless). If unsure, give me Option A/Option B versions and let me choose.
+- Optional, If tech is relevant but not tied to a project, recommend placement in Skills or Summary instead.
 
 3. Conflict & Timeline Guardrails
 
@@ -134,11 +137,17 @@ I will paste a full job description (in German) and my current resume. Please:
 - For each keyword/phrase, recommend the best section of my CV where I should place it (Summary, Skills, Experience, Education, Cover Letter).
 
 6. Optimization Rules
-- Optimize suggestions for ATS keyword scanning but keep them natural for human recruiters.
+- Optimize suggestions for ATS keyword scanning but keep them natural for German human recruiters. Use concise, punchy German phrases suitable for CVs in Germany.
+- Adjust sentence structure and word order to sound natural to German recruiters without changing factual content (“mit Schwerpunkt auf”, “im Bereich”, active verbs first).
+- Avoid long sentences.
 - Always prioritize truth over keyword stuffing.
 - You may suggest slight embellishments (e.g., framing adjacent experience more strongly), but you must:
   (a) Tell me exactly which part is being embellished.
   (b) Confirm whether it’s realistic for me to self-learn quickly so I can defend it confidently in an interview.
+
+7. Final Deliverable:
+- Updated CV bullets / summary ready for ATS & human recruiters.
+- Executive summary (6 lines, German-native phrasing).
 
 
 ## Top 1% Prompts for telc B2 Speaking Practice with LLMs
