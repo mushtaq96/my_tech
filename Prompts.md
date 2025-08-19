@@ -104,6 +104,30 @@ Keep all feedback concise, practical, and focused on rapid oral progress.
 
 
 
+### Top 1% JD→CV Optimization Prompt (ATS + Truth + No Credibility Risks)
+
+1. I will paste a full job description (in German). Please:
+
+2. Identify missing or weak keywords in my CV compared to the JD.
+
+3. Suggest realistic ways I can incorporate them truthfully into my resume.
+
+4. Do not insert technologies, frameworks, or methodologies that conflict with what I’ve actually used (e.g., don’t mix Spring Boot with ASP.NET, or Bootstrap with React/Next.js). If the JD lists something I don’t know, instead suggest how I can highlight transferable equivalents or adjacent experience.
+
+5. Use the exact German keywords from the JD (important for ATS), but explain all reasoning and strategy to me in English.
+
+6. Organize results into 3 clear groups:
+
+    (a) Direct matches → Skills/keywords I already have but should emphasize more.
+
+    (b) Transferable equivalents → I don’t have the exact thing, but I have something close that I can truthfully frame.
+
+    (c) True gaps → Skills/keywords I cannot fill; mark them clearly so I don’t try to fake them, but so I can prepare to discuss them in interviews.
+
+7. For each keyword/phrase, also recommend the best section of my CV (summary, skills, experience, education, or cover letter) where I should place it for maximum effect.
+
+8. Optimize suggestions for ATS keyword scanning, but also make sure they read naturally to a human recruiter.
+
 
 Absolutely! Here are HIGH-IMPACT, ready-to-use prompts designed especially for rapid **telc B2 oral exam** practice—tailored for LLMs with audio/chat. These prompts maximize vocabulary, fluency, grammar (including cases!), and authenticity. Use them directly (as text or voice) any time, in any new session, for super-effective practice.
 
