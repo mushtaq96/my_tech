@@ -157,49 +157,108 @@ The following is a German job description and my modified German CV. Begin by an
 
 # Cover Letter
 
+# Anschreiben Template (Word-Ready, German B2)
+
+Top 1% letters grab attention within the first 10 seconds.
+
+**Instructions for Use:**
+
+* Replace all placeholders marked like `<<PLACEHOLDER>>`.
+* Ensure bold keywords are preserved when pasting into Word.
+* Paragraphs are 3–5 sentences each with clear line breaks.
+* Keep the language German itself but give me your explainations in english.
+* Keep readability high. Do not Overuse technical keywords in every paragraph. 
+* Include a headline achievement early in the letter, in the second sentence or first paragraph: Signals immediate impact. Makes hiring managers remember me.
+* Shows that I understand the company’s mission. Go beyond just technical match.
+* Include a headline achievement early, linked to company impact.
+* Include at least one personal touch / mission alignment sentence.
+* Optionally include unique differentiator / culture fit sentence to stand out.
+
+
+---
+
+### Template
+
 I have a top 1% candidate Anschreiben template in German (B2 level). Use the job description I provide to fill in all placeholders and make it tailored for this specific position.
 
-Rules:
+**Rules:**
 
-1. Replace placeholders accurately:
-   - [Unternehmensschwerpunkt] → main focus/industry of the company (only if explicitly mentioned in JD or official website)
-   - [Produkt] → main product/service (use exact wording from JD or website; if not clear, leave placeholder for manual review)
-   - [USP keyword] → my unique selling point relevant to the role (e.g., international experience, full-stack skills, agile project experience)
-   - [relevante Technologien/Methoden] → technologies and methods from my CV that match the role
-   - [kurzes, konkretes Beispiel aus Erfahrung] → one short real example from my CV relevant to the position, prioritize quantified achievements if possible
+**Replace placeholders accurately:**
 
-2. **Personalization algorithm for “personal touch”:**
-   - Extract from the job description and company website a concrete product, project, or company value.
-   - Connect it with one real, specific experience, interest, or value of mine.
-   - Generate **one compelling sentence** that naturally fits in the Anschreiben to make it feel like I wrote it myself.
-   - Example: “Besonders begeistert mich [Produkt], da ich in meiner vorherigen Tätigkeit bei [Firma/Projekt] gelernt habe, [konkrete Erfahrung/Ergebnis], was perfekt zu Ihrer Mission passt.”
+* `<<Hook sentence about company/product>>` → always start with a highly specific hook, referencing either a product, mission, or project of the company. Grabs attention immediately. Shows knowledge of the company beyond the job ad.
+* `<<Unternehmensschwerpunkt>>` → main focus/industry of the company (only if explicitly mentioned in JD or official website)
+* `<<Produkt>>` → main product/service (use exact wording from JD or website; if not clear, leave placeholder for manual review)
+* `<<USP keyword>>` → my unique selling point relevant to the role (e.g., international experience, full-stack skills, agile project experience),
+* `<<Unique differentiator / culture fit sentence>>` → if possilbe
+* `<<relevante Technologien/Methoden>>` → technologies and methods from my CV that match the role
+* `<<kurzes, konkretes Beispiel aus Erfahrung>>` → one short real example from my CV relevant to the position, prioritize quantified achievements if possible
+*  <<Contribution-focused closing>> → 1–2 sentences stating how your skills and achievements will directly benefit the team or company.
+  
 
-3. Tone and language:
-   - Keep tone professional, motivated, natural, and consistent in first-person “Ich” perspective.
-   - Output in **German B2**, ready to copy-paste after placeholder checks.
+---
 
-4. Keywords:
-   - Highlight 3–5 strategic skills, technologies, and qualifications **exactly as they appear in the job description** per paragraph using bold formatting (e.g., `**C#**`, `**React**`).
-   - Avoid keyword stuffing; keywords must be contextually relevant.
+**Personalization algorithm for “personal touch”:**
+If no direct match exists, leave <<personal touch sentence>> for manual editing.”
+1. Extract from the job description and company website a concrete product, project, or company value.
+2. Connect it with one real, specific experience, interest, or value of mine.
+3. Generate one compelling sentence that naturally fits in the Anschreiben to make it feel like I wrote it myself.
+**Note:** Limit both <<personal touch sentence>> and <<Unique differentiator / culture fit sentence>> to **1 sentence each** to prevent over-expanding.
 
-5. Openings & closings:
-   - Opening sentence should convey immediate enthusiasm and specificity about the role or company.
-   - Closing should emphasize my readiness to contribute and potential value to the team.
+**Example sentence:**
 
-6. Guardrails:
-   - Do not invent company facts or products. If uncertain, leave placeholders for manual review.
-   - Limit buzzwords to only those present in the JD or your CV.
-   - Ensure CV examples are directly relevant to the job’s responsibilities.
-   - Verify that all company products, services, and technologies are accurate.
-   - If a job description lacks specifics, leave placeholders for manual review and avoid generic statements.
+> „Besonders begeistert mich <<Produkt>>, da ich in meiner vorherigen Tätigkeit bei <\<Firma/Projekt>> gelernt habe, <\<konkrete Erfahrung/Ergebnis>>, was perfekt zu Ihrer Mission passt.“
 
-7. Output format:
-   - Anschreiben should be structured into short, clear paragraphs (3–5 sentences each).
-   - Include **bolded keywords** and the **personal touch sentence** in context.
-   - End with a professional, contribution-focused closing sentence.
+---
 
-Job description: [PASTE JOB DESCRIPTION HERE]
-CV / Experience: [PASTE RELEVANT CV EXCERPTS HERE]
+**Tone and language:**
+
+* Keep tone professional, motivated, natural, and consistent in first-person “Ich” perspective.
+* Output in German B2, Keep sentences ≤25 words, simple B2 grammar, avoid overly long clauses. **fully ready to copy-paste into Word** after placeholder checks.
+
+---
+
+**Keywords:**
+
+* Highlight 3–5 strategic skills, technologies, and qualifications exactly as they appear in the job description per paragraph **using Word-compatible bold formatting** (e.g., **C#**, **React**).
+* Avoid keyword stuffing; keywords must be contextually relevant.
+
+---
+
+**Openings & closings:**
+
+* Opening sentence should convey immediate enthusiasm and specificity about the role or company.
+* Closing should emphasize my readiness to contribute and potential value to the team.
+
+---
+
+**Guardrails:**
+
+* Do not invent company facts or products. If uncertain, leave placeholders for manual review.
+* Limit buzzwords to only those present in the JD or your CV.
+* Ensure CV examples are directly relevant to the job’s responsibilities.
+* Verify that all company products, services, and technologies are accurate.
+* If a job description lacks specifics, leave placeholders for manual review and avoid generic statements.
+
+---
+
+**Output format:**
+
+* Structure
+
+1. Opening paragraph (3–5 sentences): Hook about the company/product. Headline achievement early. Optional personal touch.
+2. Middle paragraph (3–5 sentences each): Focus on 3–5 bolded technologies or skills (contextual, not list). Use specific CV examples showing results/impact. Keep paragraph readable; avoid keyword stuffing.
+3. Closing paragraph (3–5 sentences): Emphasize contribution and value. Restate motivation and readiness.
+
+* Include **bolded keywords** and the **personal touch sentence** in context.
+* End with a professional, contribution-focused closing sentence.
+* Use **line breaks and spacing compatible with Microsoft Word**.
+
+---
+
+**Job description:** `<<PASTE JOB DESCRIPTION HERE>>`
+**CV / Experience:** `<<PASTE RELEVANT CV EXCERPTS HERE>>`
+
+---
 
 
 
