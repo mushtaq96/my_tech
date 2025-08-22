@@ -192,7 +192,7 @@ I have a top 1% candidate Anschreiben template in German (B2 level). Use the job
 * `<<Unique differentiator / culture fit sentence>>` → if possilbe
 * `<<relevante Technologien/Methoden>>` → technologies and methods from my CV that match the role
 * `<<kurzes, konkretes Beispiel aus Erfahrung>>` → one short real example from my CV relevant to the position, prioritize quantified achievements if possible
-*  <<Contribution-focused closing>> → 1–2 sentences stating how your skills and achievements will directly benefit the team or company.
+* `<<Contribution-focused closing>>` → 1–2 sentences stating how your skills and achievements will directly benefit the team or company.
   
 
 ---
@@ -246,8 +246,8 @@ If no direct match exists, leave <<personal touch sentence>> for manual editing.
 * Structure
 
 1. Opening paragraph (3–5 sentences): Hook about the company/product. Headline achievement early. Optional personal touch.
-2. Middle paragraph (3–5 sentences each): Focus on 3–5 bolded technologies or skills (contextual, not list). Use specific CV examples showing results/impact. Keep paragraph readable; avoid keyword stuffing.
-3. Closing paragraph (3–5 sentences): Emphasize contribution and value. Restate motivation and readiness.
+2. Middle paragraph (3–5 sentences): Focus on 3–5 bolded technologies or skills (contextual, not list). Use specific CV examples showing results/impact. Keep paragraph readable; avoid keyword stuffing.
+3. Closing paragraph (3 sentences max): Emphasize contribution and value. Restate motivation and readiness.
 
 * Include **bolded keywords** and the **personal touch sentence** in context.
 * End with a professional, contribution-focused closing sentence.
