@@ -104,6 +104,8 @@ Keep all feedback concise, practical, and focused on rapid oral progress.
 
 
 
+
+
 ### Top 1% JD→CV Optimization Prompt (ATS + Truth + No Credibility Risks)
 
 I will paste a full job description (in German) and my current resume. Please:
@@ -151,6 +153,57 @@ I will paste a full job description (in German) and my current resume. Please:
 
 Limit placement suggestions to Summary, Skills, and Experience sections.
 The following is a German job description and my modified German CV. Begin by analyzing them. Keep all German keywords, phrases, and technical terms intact, but explain and provide recommendations in English.
+
+
+# Cover Letter
+
+I have a top 1% candidate Anschreiben template in German (B2 level). Use the job description I provide to fill in all placeholders and make it tailored for this specific position.
+
+Rules:
+
+1. Replace placeholders accurately:
+   - [Unternehmensschwerpunkt] → main focus/industry of the company (only if explicitly mentioned in JD or official website)
+   - [Produkt] → main product/service (use exact wording from JD or website; if not clear, leave placeholder for manual review)
+   - [USP keyword] → my unique selling point relevant to the role (e.g., international experience, full-stack skills, agile project experience)
+   - [relevante Technologien/Methoden] → technologies and methods from my CV that match the role
+   - [kurzes, konkretes Beispiel aus Erfahrung] → one short real example from my CV relevant to the position, prioritize quantified achievements if possible
+
+2. **Personalization algorithm for “personal touch”:**
+   - Extract from the job description and company website a concrete product, project, or company value.
+   - Connect it with one real, specific experience, interest, or value of mine.
+   - Generate **one compelling sentence** that naturally fits in the Anschreiben to make it feel like I wrote it myself.
+   - Example: “Besonders begeistert mich [Produkt], da ich in meiner vorherigen Tätigkeit bei [Firma/Projekt] gelernt habe, [konkrete Erfahrung/Ergebnis], was perfekt zu Ihrer Mission passt.”
+
+3. Tone and language:
+   - Keep tone professional, motivated, natural, and consistent in first-person “Ich” perspective.
+   - Output in **German B2**, ready to copy-paste after placeholder checks.
+
+4. Keywords:
+   - Highlight 3–5 strategic skills, technologies, and qualifications **exactly as they appear in the job description** per paragraph using bold formatting (e.g., `**C#**`, `**React**`).
+   - Avoid keyword stuffing; keywords must be contextually relevant.
+
+5. Openings & closings:
+   - Opening sentence should convey immediate enthusiasm and specificity about the role or company.
+   - Closing should emphasize my readiness to contribute and potential value to the team.
+
+6. Guardrails:
+   - Do not invent company facts or products. If uncertain, leave placeholders for manual review.
+   - Limit buzzwords to only those present in the JD or your CV.
+   - Ensure CV examples are directly relevant to the job’s responsibilities.
+   - Verify that all company products, services, and technologies are accurate.
+   - If a job description lacks specifics, leave placeholders for manual review and avoid generic statements.
+
+7. Output format:
+   - Anschreiben should be structured into short, clear paragraphs (3–5 sentences each).
+   - Include **bolded keywords** and the **personal touch sentence** in context.
+   - End with a professional, contribution-focused closing sentence.
+
+Job description: [PASTE JOB DESCRIPTION HERE]
+CV / Experience: [PASTE RELEVANT CV EXCERPTS HERE]
+
+
+
+
 
 
 ## Top 1% Prompts for telc B2 Speaking Practice with LLMs
