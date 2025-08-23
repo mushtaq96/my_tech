@@ -149,7 +149,7 @@ I will paste a full job description (in German) and my current resume. Please:
 
 7. Final Deliverable:
 - Updated CV bullets / summary ready for ATS & human recruiters.
-- Executive summary (6 lines, German-native phrasing).
+- Executive summary (max 6 lines in one paragraph, German-native phrasing).
 
 Limit placement suggestions to Summary, Skills, and Experience sections.
 The following is a German job description and my modified German CV. Begin by analyzing them. Keep all German keywords, phrases, and technical terms intact, but explain and provide recommendations in English.
