@@ -1,140 +1,190 @@
-# my_tech(ubuntu 18 machine)
+***
 
-installed **terminator**
+# my_tech (Ubuntu 18 Machine Cheatsheet)
 
-installed **fish** - type *fish_config* on cli and follow
+***
 
-installed **sublime text 3**
+## **Installed Tools**
 
-installed **pip3** 
+- **Terminator** (terminal emulator)
+- **Fish Shell**
+  - Configure: `fish_config`
+- **Sublime Text 3**
+- **pip3** (Python package manager)
+- **Anaconda** (for Jupyter Notebook)
+- **Gnome Tweaks**
+- **autoenv** (pip package for Python env activation)
+- **bucklespring**: Keyboard sound nostalgia
+  - `sudo apt install bucklespring` (or use `snap`)
 
-installed **anaconda** to run *jupyter notebook*
+***
 
-install gnome tweaks
+## **Useful Commands & Filters**
 
-sudo apt install bucklespring / use 'snap' - nostalgia
+- **Tree Exclude Pattern**
+  ```sh
+  tree -I "node_modules|__pycache__"
+  ```
+- **Find Largest Files**
+  ```sh
+  find . -type f -exec du -h {} + | sort -rh | head -20
+  ```
+- **Explicit Code Filtering**
+  ```sh
+  code2prompt . --exclude="node_modules/**,.venv/**,__pycache__/**,public/**,*.svg,*.ico,package-lock.json" .
+  ```
 
-autoenv - A pip package for ease of python environment activations
+***
 
-#### Exclude specific patterns filtering option tree command
-```bash
-tree -I "node_modules|__pycache__"
-```
-#### Check individual large files
-Identify if any single file is very large (e.g., big JSON, huge TypeScript files) and consider excluding or summarizing them.
-You can check file sizes with:
-```bash
-find . -type f -exec du -h {} + | sort -rh | head -20
-```
-####  Explicitly filtering for fewer tokens 
-```bash
-code2prompt . --exclude="node_modules/**,.venv/**,__pycache__/**,public/**,*.svg,*.ico,package-lock.json" .
-```
+## **Important Resources**
 
-## Interesting things to check out:-
-https://tutorials.ubuntu.com/tutorial/basic-snap-usage#0
+- [Ubuntu Snap Basics](https://tutorials.ubuntu.com/tutorial/basic-snap-usage#0)
+- [Knowing Machines - Models](https://knowingmachines.org/models-all-the-way#section5)
+- [Google Ngrams Books](https://books.google.com/ngrams/)
+- ["ChatGPT is a Blurry JPEG"](https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web)
+- [Codecademy LLM Token Prediction](https://static-assets.codecademy.com/Courses/intro-to-llms/next_token_prediction/llm_next_token_prediction.html)
 
+***
 
-## Important things to remember:-
+## **System Info & Package Management**
 
-1. Where are update and apt-get files are stored?
-	- /var/cache/apt/archives
-	- usage: sudo apt-get install <package name>
-			 sudo aot-get update
-	- apt(Advanced Package Tool) : cli tool for package management on linux distros like ubuntu, debian, mint etc. 		
+- **Apt Cache Location**  
+  `/var/cache/apt/archives`
+- Example usage:
+  ```sh
+  sudo apt-get install <package>
+  sudo apt-get update
+  ```
+- **Apt** is CLI for package management on Ubuntu/Debian/Mint.
 
-2. conda has some techgnical issues when running with fish shell.This link helps,
-https://stackoverflow.com/questions/34280113/add-conda-to-path-in-fish/34280406#34280406
+***
 
-3. Much needed extentions(firefox version)
-	Https everywhere,
-	Grammarly,
-	Wikiwand,
-	ad block plus,
-	momentum,
-	hoxx vpn,
-	onetab,
-	english popup dictionary
-	
-	web search navigator(chrome) - keyboard shortcuts for surfing the web 
-	https://github.com/infokiller/web-search-navigator
+## **Conda & Fish Shell Tips**
 
+- Conda + Fish Shell has issues.  
+  [StackOverflow Guide](https://stackoverflow.com/questions/34280113/add-conda-to-path-in-fish/34280406#34280406)
 
-4. Using NVM(node version manager)
+***
 
-   If you're using Node Version Manager (nvm), you can switch to a different version of Node.js by using the `nvm use` command. Here's how you can do it:
+## **Browser Extensions**
 
-	1. First, check the available versions of Node.js on your system with `nvm ls`. The output will show all installed versions.
-	2. If you don't have the required version (16.14 or higher as per your error message), you can install it using `nvm install 16.14`.
-	3. After installation, you can switch to the new version with `nvm use 16.14`.
+- (Firefox) HTTPS Everywhere, Grammarly, Wikiwand, Adblock Plus, Momentum, Hoxx VPN, Onetab, English Popup Dictionary
+- (Chrome) [Web Search Navigator](https://github.com/infokiller/web-search-navigator) (keyboard shortcuts for web surfing)
 
-	Now, your terminal session will use the specified version of Node.js. You can verify this by running `node -v`, which should output `v16.14`.
-	
-	After switching to the compatible Node.js version, try running `yarn install` again in your project directory.
-	
-	Remember, nvm settings are local to the terminal session. If you open a new terminal window or tab, you'll need to select the Node.js version again using `nvm use`.
+***
 
-5. Yarn and npm are both package managers for JavaScript, but they work in slightly different ways. 
+## **Node.js and Package Managers**
 
-	The reason for choosing one could be a matter of personal preference or specific features that one package manager provides. For example, some developers prefer Yarn because it's often faster and has a few features that npm doesn't have, like workspaces. On the other hand, npm is bundled with Node.js and has a larger user base.
-	
-	However, it's generally recommended to stick with one package manager for a project to avoid inconsistencies. The lock files generated by Yarn and npm (`yarn.lock` and `package-lock.json`, respectively) are not compatible with each other. This means that if some developers on a team use npm and others use Yarn, they might end up with different versions of the same dependencies, leading to bugs that are hard to track down.
-	
-	In your case, you could replace `npm start` with `yarn start` and `npm build` with `yarn build`, if you want to use Yarn consistently. Similarly, if you want to use npm, you could replace `yarn install` with `npm install`. Just make sure to delete the incorrect lock file (`yarn.lock` if you're using npm, or `package-lock.json` if you're using Yarn) before you install the dependencies.
+- **NVM (Node Version Manager)**
+  1. List installed: `nvm ls`
+  2. Install version: `nvm install 16.14`
+  3. Use version: `nvm use 16.14`
+  4. Verify: `node -v`
+  5. Install deps: `yarn install`
+  - Settings are local to each terminal
 
-	You can check if a module is installed in your project by looking at the dependencies section of your package.json file. If the module is listed there, it means it’s installed.
+- **Yarn vs npm:**  
+  Stick to one per project; delete the other’s lock file before installing.
 
-6. Port Conflicts
-	Terminate the Existing Process: If you prefer to use port 3000, you’ll need to terminate the existing process that’s using it. The warning message indicates that the process ID (pid) is 6648. You can terminate this process by running kill -9 6648 in your terminal.
-	
-	Find and Terminate the Process Using the Port: If you don’t know the pid, you can find out which process is using port 3000 with the command lsof -i :3000. This will give you a list of processes using the port, from which you can find the pid and terminate it with the kill command.
-	
-	After resolving the port conflict, try running your application again.
+***
 
-7. VS Code
-   In Visual Studio Code, you can collapse all code blocks in the current file using the following steps:
+## **Port Conflicts**
 
-	1. Press `Ctrl + K` and then `Ctrl + 0` (the zero number key) to fold all. To unfold all, you can press `Ctrl + K` and then `Ctrl + J`.
+- Find process: `lsof -i :3000`
+- Kill process: `kill -9 <PID>`
 
-	If you want to collapse all directories in the Explorer pane, you can use the following shortcut²:
+***
 
-		1. Press `Ctrl + Shift + E` to focus on the Explorer pane.
-		2. Press `Ctrl + Left Arrow` to collapse all directories.
+## **VS Code Shortcuts**
 
-8. Important Commands
-   -  tree -I "node_modules|env|build|dist"
-   - Find the process using port 8000, ```lsof -i :8000```
-   - Kill the process (replace 12345 with the actual PID) ```kill -9 12345```
-  
-9. SSL Corporate Errors: Just open the file and add:
-```
+- Collapse all code blocks: `Ctrl+K`, then `Ctrl+0`
+- Unfold all: `Ctrl+K`, then `Ctrl+J`
+- Collapse Explorer directories: 
+  - Focus Explorer: `Ctrl+Shift+E` 
+  - Collapse: `Ctrl+Left Arrow`
+
+***
+
+## **Common Commands**
+
+- Show tree excluding dirs:  
+  `tree -I "node_modules|env|build|dist"`
+- Find process using port:  
+  `lsof -i :8000`
+- Kill process:  
+  `kill -9 <PID>`
+
+***
+
+## **SSL Python Fixes**
+
+Add to your shell config:
+```sh
 export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+source ~/.bashrc
 ```
-Then reload your shell or restart the terminal:
-`source ~/.bashrc`
-What happens after this?
-Python and requests will find the right certificates.
-SSL connections (like downloading packages from PyPI) will succeed.
-You won’t get those annoying SSL certificate errors anymore.
+Fixes most requests/SSL issues.
 
-https://knowingmachines.org/models-all-the-way#section5
-https://books.google.com/ngrams/
-https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web
-https://static-assets.codecademy.com/Courses/intro-to-llms/next_token_prediction/llm_next_token_prediction.html
+***
 
-Hackathon guide
-1. https://www.napkin.ai/ - get visuals from text
-2. https://gitdiagram.com/ - get visual from code repos
+## **GitHub SSH Setup Cheatsheet**
 
-Blockchain
-1. https://mempool.space/de/
-2. https://v3.antpool.com/home
-3. https://bitnodes.io/nodes/live-map/
-4. https://www.biteaddress.org/
-5. 
+> Quick steps to configure SSH for GitHub on a new device.
 
-Uncommon Job Portals 
-https://www.cyberforum.de/jobboerse
-https://join-nxtgn.com/jobportal/
-https://jobs.developer-media.de/Suchergebnis.html?jsjn=ai&jsjnid=&jsjo=&jsjoid=
+### 1. Check for Existing SSH Keys
+```sh
+ls -al ~/.ssh
+```
+### 2. Generate a New SSH Key
+```sh
+ssh-keygen -t ed25519 -C "your_email@example.com"
+# Or:
+# ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+### 3. Add SSH Key to ssh-agent
+```sh
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+### 4. Add SSH Key to GitHub
+```sh
+cat ~/.ssh/id_ed25519.pub
+```
+Go to GitHub → Settings → SSH and GPG keys → **New SSH Key**. Paste and save.
+
+### 5. Test SSH Connection
+```sh
+ssh -T git@github.com
+```
+### 6. Clone via SSH
+```sh
+git clone git@github.com:username/repo.git
+```
+
+***
+
+## **Hackathon Visual Tools**
+
+- [Napkin.ai](https://www.napkin.ai/) — generate visuals from text
+- [GitDiagram.com](https://gitdiagram.com/) — visualize code repos
+
+***
+
+## **Blockchain Tools**
+
+- [mempool.space](https://mempool.space/de/)
+- [Antpool.com](https://v3.antpool.com/home)
+- [Bitnodes.io](https://bitnodes.io/nodes/live-map/)
+- [Biteaddress.org](https://www.biteaddress.org/)
+
+***
+
+## **Uncommon Job Portals**
+
+- [CyberForum Jobbörse](https://www.cyberforum.de/jobboerse)
+- [join-nxtgn.com](https://join-nxtgn.com/jobportal/)
+- [Developer Media Jobs](https://jobs.developer-media.de/Suchergebnis.html?jsjn=ai&jsjnid=&jsjo=&jsjoid=)
+
+
+***
