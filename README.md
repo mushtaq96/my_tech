@@ -16,8 +16,11 @@
 - **autoenv** (pip package for Python env activation)
 - **bucklespring**: Keyboard sound nostalgia
   - `sudo apt install bucklespring` (or use `snap`)
-
-***
+- **Tree**
+  - `sudo apt-get install tree`
+  - Show with file sizes `tree -h`
+  - Show hidden files `tree -a`
+  - Show only directories `tree -d`
 
 ## **Useful Commands & Filters**
 
