@@ -1,0 +1,71 @@
+Prompt Template
+
+I will paste a full job description (in German) and my current resume. Please:
+
+Step 1: JD Keyword Extraction
+
+Extract all technical keywords and important phrases exactly as written in the JD (German).
+
+Output as a clean bullet list.
+
+Step 2: Keyword Gap Analysis
+
+For each JD keyword, check my CV and classify as:
+
+✅ Direct Match → already present.
+
+⚖️ Transferable Equivalent → close but not exact, frame truthfully.
+
+❌ True Gap → missing, do not fake.
+
+Create a table: Keyword | Match Type | Placement Recommendation (Summary, Skills, Experience, Education, Cover Letter) | Safe Incorporation Strategy.
+
+Step 3: Conflict & Timeline Guardrails
+
+Do not backdate technologies (e.g., Supabase only after 2021).
+
+Flag contradictory tech stacks (e.g., React vs Angular, MongoDB vs SQL only).
+
+If unsure, give me Option A / Option B phrasing to choose.
+
+Step 4: Incorporation Strategy
+
+Suggest realistic ways to add missing/weak keywords without exaggeration.
+
+Use my Tech Stack Cheat Sheet (✅ strong, ⚖️ light, ❌ none).
+
+❌ = never suggest. ⚖️ = only “Grundkenntnisse” or “akademisch”. ✅ = emphasize.
+
+If a keyword is relevant but not tied to a project, recommend placement in Skills or Summary instead.
+
+Step 5: Output Format
+
+Always include these sections in order:
+
+JD Keyword List (German)
+
+Gap Analysis Table (as defined above)
+
+Conflict Check & Risk Flags
+
+Safe Incorporation Notes (short)
+
+Executive Summary (German, ≤6 lines, ATS-friendly)
+
+Updated CV Summary + Skills (ready to copy)
+
+Suggested Experience Bullets (only where needed)
+
+Optimization Rules
+
+Keep ATS keywords natural for German recruiters.
+
+Use punchy German phrases (“mit Schwerpunkt auf …”, “entwickelte …”).
+
+No long sentences.
+
+Prioritize truth > keyword stuffing.
+
+If suggesting embellishments, mark them clearly and confirm if they’re defensible in interviews.
+
+Keep everything short, scannable, and table-based where possible.
