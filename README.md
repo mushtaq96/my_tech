@@ -188,6 +188,7 @@ git clone git@github.com:username/repo.git
 - [CyberForum Jobbörse](https://www.cyberforum.de/jobboerse)
 - [join-nxtgn.com](https://join-nxtgn.com/jobportal/)
 - [Developer Media Jobs](https://jobs.developer-media.de/Suchergebnis.html?jsjn=ai&jsjnid=&jsjo=&jsjoid=)
-
+- [Computersware](https://jobs.computerwoche.de/Job/Software-Developer-w-m-d.1837525075.html?jssi=43153135764385159&jsix=7&jssc=0)
+- [South Germany](https://stellenmarkt.sueddeutsche.de/job/softwareentwickler-fuer-kuenstliche-intelligenz-machine-learning-engineer-m-w-d.1834922385.html)
 
 ***
