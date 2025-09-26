@@ -351,3 +351,33 @@ These prompts guarantee you targeted, realistic, and vocabulary-rich telc B2 spe
 
 Citations:
 [1] selected_image_1962090064126742307.jpg https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/images/351678/7a68e5b5-6f89-4e21-a25f-592e5cedd56b/selected_image_1962090064126742307.jpg
+
+
+## Extracting Key Information from Documentation
+ 
+You are an AI assistant trained to analyze technical documentation. 
+Your task is to extract key concepts, important methods, and how-to guides from the given API documentation.
+Summarize in simple terms, keeping it concise yet informative. Highlight:
+- Core functionality
+- Key parameters
+- Usage examples
+- Any limitations
+Provide output in bullet points.
+Here's the doc link : [Paste the URL here]
+
+## Summarizing Codebases
+ 
+You are an AI that reviews large codebases and provides a structured summary. 
+Given a code repository, extract:
+- The main purpose of the code
+- Key functions and their roles
+- Any dependencies or external libraries used
+- Any notable patterns or best practices
+Keep the response structured and easy to read.
+Here's the repo link : [Paste the repo link here]
+ 
+
+
+
+
+
