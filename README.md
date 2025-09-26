@@ -105,6 +105,18 @@
 - Collapse Explorer directories: 
   - Focus Explorer: `Ctrl+Shift+E` 
   - Collapse: `Ctrl+Left Arrow`
+ 
+## **VS Code Settings**
+
+- Html Preview
+```
+{
+    "editor.formatOnSave": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
+}
+```
 
 ***
 
