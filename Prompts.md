@@ -375,7 +375,11 @@ Given a code repository, extract:
 - Any notable patterns or best practices
 Keep the response structured and easy to read.
 Here's the repo link : [Paste the repo link here]
- 
+
+
+## Base Idea Exploration
+
+What do I need to know/prepare/do in order to X. give 2-4 examples. add 5 followup questions for futher exploration. Also list of "related subjects/concepts" to explore. 
 
 
 
