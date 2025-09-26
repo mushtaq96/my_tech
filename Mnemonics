@@ -1,0 +1,35 @@
+### Common Error Mnemonics
+
+Syntax Errors: “Missing Semicolons Stop Scripts” - reminds you to check punctuation.
+Runtime Errors: “Divide By Zero Breaks Flow” - watch out for invalid operations at runtime.
+Logic Errors: “Wrong Logic Leads to Wrong Output” - test thoroughly to catch these.
+Null Reference Errors: “Null Means No Object” - always check for null before use.
+Off-by-One Errors: “Loop One Too Many or One Too Few” - carefully check loop boundaries.
+Type Errors: “Mixing Apples and Oranges” - avoid incompatible data types.
+“RIP” for Debugging Steps
+Reproduce the bug. Isolate the cause. Patch the fix
+Syslog Severity Levels Mnemonic
+“Every Programmer Should Log System Messages Carefully” Helps recall severity levels: Emergency, Panic, Severe, Log, System, Message, etc.
+
+### Non Technical
+
+1. “Leaders Can Build Bridges, Inspire Leadership”
+Short Story / Visualization to Remember the Mnemonic
+Imagine you are standing on one side of a wide river. On the other side is your goal: becoming a successful CTO or CEO who leads innovation and creates impact.
+Leaders (Listen): First, you put on your headphones and listen carefully to the sounds around you-the needs of your team, customers, and market. Listening helps you understand the best path forward.
+Can (Clarify): You take out a map and clarify your route. Clear directions prevent you from getting lost and help you communicate your plan to others.
+Build (Build Trust): You start building a sturdy bridge with your team’s help. Trust is the foundation-without it, the bridge won’t hold.
+Bridges (Bridge Gaps): As you build, you connect two different lands-technical experts and business leaders-making sure everyone can cross easily.
+Inspire (Influence): Standing on the bridge, you inspire others with your vision, telling stories and sharing data that motivate them to follow you.
+Leadership (Lead): Finally, you lead your team confidently across the bridge toward your shared vision, navigating any storms or obstacles with calm and clarity.
+
+2. “A before B, Always the Client First.” "Underpromise and Overdeliver"
+
+If the client says: Task A, do Task A.
+Don’t jump ahead to suggest Task B, even if you think it’s “better.”
+Because: Task B = new requirement, new request, scope creep.
+
+Always listen to the client.
+👉 Think of it as a traffic sign: A is the green light, B is the red light.
+Green = do what’s asked.
+Red = don’t assume, don’t jump ahead.
