@@ -204,3 +204,5 @@ git clone git@github.com:username/repo.git
 - [South Germany](https://stellenmarkt.sueddeutsche.de/job/softwareentwickler-fuer-kuenstliche-intelligenz-machine-learning-engineer-m-w-d.1834922385.html)
 
 ***
+
+  du -h --max-depth=1 . | sort -h
