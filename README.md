@@ -214,3 +214,6 @@ Installed Pythons found by C:\windows\py.exe Launcher for Windows
  -3.14-64
  py -3.9 -m venv venv
  source venv/Scripts/activate
+
+Tab Does not work ON WSL Vs code
+ ctrl+shift+p (opens command pallete), then search and select 'Toggle Tab Moves Focus'.
