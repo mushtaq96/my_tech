@@ -206,3 +206,11 @@ git clone git@github.com:username/repo.git
 ***
 
   du -h --max-depth=1 . | sort -h
+
+Windows
+$ py --list
+Installed Pythons found by C:\windows\py.exe Launcher for Windows
+ -3.9-64 *
+ -3.14-64
+ py -3.9 -m venv venv
+ source venv/Scripts/activate
