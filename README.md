@@ -217,3 +217,7 @@ Installed Pythons found by C:\windows\py.exe Launcher for Windows
 
 Tab Does not work ON WSL Vs code
  ctrl+shift+p (opens command pallete), then search and select 'Toggle Tab Moves Focus'.
+
+
+ Termux SSH
+ ssh username@<ipaddress> -p 8022
