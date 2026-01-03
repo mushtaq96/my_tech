@@ -1,6 +1,6 @@
 ***
 
-# my_tech (Ubuntu 18 Machine Cheatsheet)
+# my_tech
 
 ***
 
@@ -176,6 +176,11 @@ ssh -T git@github.com
 ```sh
 git clone git@github.com:username/repo.git
 ```
+What happens invisibly when you type, ssh root@192.0.0.1
+1. Server encrypts secret: "Prove you're you: 7x=42"
+2. Your laptop decrypts: "x=6 ✓ Math works!"
+3. Server checks: "Correct! Welcome aboard!"
+
 
 ***
 
