@@ -181,7 +181,24 @@ What happens invisibly when you type, ssh root@192.0.0.1
 2. Your laptop decrypts: "x=6 ✓ Math works!"
 3. Server checks: "Correct! Welcome aboard!"
 
+Harden Security (Critical) - Create a non-root user
+adduser mushtaq  # follow prompts
+usermod -aG sudo mushtaq  # grant sudo access (Ubuntu)
+as root, pasted public key from Hetzner here.
+# 1. Create .ssh directory for mushtaq
+mkdir -p /home/mushtaq/.ssh
 
+# 2. Move the public key into authorized_keys
+mv /home/mushtaq/id_ed25519.pub /home/mushtaq/.ssh/authorized_keys
+
+# 3. Set correct ownership (critical!)
+chown -R mushtaq:mushtaq /home/mushtaq/.ssh
+
+# 4. Set secure permissions (critical!)
+chmod 700 /home/mushtaq/.ssh
+chmod 600 /home/mushtaq/.ssh/authorized_keys
+Test
+ssh mushtaq@[IPV6]
 ***
 
 ## **Hackathon Visual Tools**
