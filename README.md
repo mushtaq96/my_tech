@@ -272,9 +272,14 @@ exit
 text
 Ubuntu: 88GB → 59GB (-29GB)
 Docker: 27GB → 22GB (-5GB)
-
+```
 
 RemovePaywalls.com: Prepend the site URL with removepaywalls.com/ or use its browser extensions. 
 Bypass Paywalls Clean: A widely used Chrome/Firefox extension that bypasses many paywalls, including Bloomberg’s. 
 Reader Mode: Use your browser’s reader view to strip away paywall scripts. 
 Archive.today (or archive.ph): Load the article through the archiving service to access content.
+
+German Resources
+https://leichte-sprache.de/
+https://www1.wdr.de/hilfe/leichte-sprache/index.html
+https://learngerman.dw.com/de/24012026-langsam-gesprochene-nachrichten/a-75639506
