@@ -243,3 +243,38 @@ Tab Does not work ON WSL Vs code
 
  Termux SSH
  ssh username@<ipaddress> -p 8022
+
+
+
+# 💾 WSL2 & Docker Disk Space Guide
+
+**Two WSL2 "balloons" silently eat SSD. Clean monthly, shrink quarterly.**
+
+## 🚨 Symptoms (fix NOW)
+- Windows <15GB free
+- Task Manager 100% Disk
+- WSL/Docker "No space left"
+
+## 🧹 Monthly Clean (add to ~/.bashrc)
+```bash
+alias clean="rm -rf ~/.cache/* && npm cache clean --force && docker system prune -a --volumes -f"
+clean
+🔧 Shrink VHDX (when <20GB free)
+powershell
+wsl --shutdown
+diskpart
+select vdisk file="[YOUR_PATH]\ext4.vhdx"
+attach vdisk readonly
+compact vdisk
+detach vdisk
+exit
+📈 Example Results
+text
+Ubuntu: 88GB → 59GB (-29GB)
+Docker: 27GB → 22GB (-5GB)
+
+
+RemovePaywalls.com: Prepend the site URL with removepaywalls.com/ or use its browser extensions. 
+Bypass Paywalls Clean: A widely used Chrome/Firefox extension that bypasses many paywalls, including Bloomberg’s. 
+Reader Mode: Use your browser’s reader view to strip away paywall scripts. 
+Archive.today (or archive.ph): Load the article through the archiving service to access content.
