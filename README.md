@@ -257,6 +257,21 @@ Remove unused images regularly
 Keep Dockerfiles minimal & clean
 
 
+Tech Note: Software KVM (Microsoft PowerToys)
+Connection Fix (Public/Shared Wi-Fi):
+
+Search "Allow an app through Windows Firewall" > Change settings.
+
+Find PowerToys.MouseWithoutBorders and check the Public box for all entries.
+
+Pro-tip: Disable VPN and use the IP Address if the PC Name fails to connect.
+
+Functionality:
+
+Share one mouse/keyboard, sync clipboards, and drag-copy files between PCs (app windows cannot be dragged across).
+
+
+
 # 💾 WSL2 & Docker Disk Space Guide
 
 **Two WSL2 "balloons" silently eat SSD. Clean monthly, shrink quarterly.**
