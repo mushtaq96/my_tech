@@ -246,6 +246,17 @@ Tab Does not work ON WSL Vs code
 
 
 
+CI/CD Best Practices
+
+Use small base images (Alpine)
+
+Proper tagging (v1.0, not just latest)
+
+Remove unused images regularly
+
+Keep Dockerfiles minimal & clean
+
+
 # 💾 WSL2 & Docker Disk Space Guide
 
 **Two WSL2 "balloons" silently eat SSD. Clean monthly, shrink quarterly.**
