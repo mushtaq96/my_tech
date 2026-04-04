@@ -1,311 +1,149 @@
-***
 
-# my_tech
+-----
 
-***
+# 🛠️ My Tech Stack & Ops Manual
 
-## **Installed Tools**
+## **1. Environment & Core Tools**
 
-- **Terminator** (terminal emulator)
-- **Fish Shell**
-  - Configure: `fish_config`
-- **Sublime Text 3**
-- **pip3** (Python package manager)
-- **Anaconda** (for Jupyter Notebook)
-- **Gnome Tweaks**
-- **autoenv** (pip package for Python env activation)
-- **bucklespring**: Keyboard sound nostalgia
-  - `sudo apt install bucklespring` (or use `snap`)
-- **Tree**
-  - `sudo apt-get install tree`
-  - Show with file sizes `tree -h`
-  - Show hidden files `tree -a`
-  - Show only directories `tree -d`
+  * **Terminal:** Terminator + **Fish Shell** (Run `fish_config` for web UI setup).
+  * **Editors:** Sublime Text 3, VS Code.
+  * **Python/Data:** Anaconda (Jupyter), `pip3`, `autoenv` (auto-activate venv).
+  * **Utility:** `tree` (Visualize structure), `Gnome Tweaks`, `bucklespring` (Mechanical keys sounds).
 
-## **Useful Commands & Filters**
+### **Tree Shortcuts**
 
-- **Tree Exclude Pattern**
-  ```sh
-  tree -I "node_modules|__pycache__"
-  ```
-- **Find Largest Files**
-  ```sh
-  find . -type f -exec du -h {} + | sort -rh | head -20
-  ```
-- **Explicit Code Filtering**
-  ```sh
-  code2prompt . --exclude="node_modules/**,.venv/**,__pycache__/**,public/**,*.svg,*.ico,package-lock.json" .
-  ```
+  * **Standard:** `tree -h` (sizes), `tree -a` (hidden), `tree -d` (dirs only).
+  * **Clean View:** `tree -I "node_modules|__pycache__|env|build|dist"`.
 
-***
+-----
 
-## **Important Resources**
+## **2. System & Package Management**
 
-- [Ubuntu Snap Basics](https://tutorials.ubuntu.com/tutorial/basic-snap-usage#0)
-- [Knowing Machines - Models](https://knowingmachines.org/models-all-the-way#section5)
-- [Google Ngrams Books](https://books.google.com/ngrams/)
-- ["ChatGPT is a Blurry JPEG"](https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web)
-- [Codecademy LLM Token Prediction](https://static-assets.codecademy.com/Courses/intro-to-llms/next_token_prediction/llm_next_token_prediction.html)
+  * **Apt (Debian/Ubuntu):** Cache at `/var/cache/apt/archives`.
+  * **Conda + Fish:** Known path issues. [SO Fix](https://stackoverflow.com/questions/34280113/add-conda-to-path-in-fish/34280406#34280406).
+  * **Node.js (NVM):**
+      * `nvm ls` | `nvm install 16.14` | `nvm use 16.14` | `node -v`.
+      * **Rule:** Use one lockfile. Delete `package-lock.json` if using `yarn.lock` (and vice versa).
 
-***
+-----
 
-## **System Info & Package Management**
+## **3. Critical Snippets & Fixes**
 
-- **Apt Cache Location**  
-  `/var/cache/apt/archives`
-- Example usage:
-  ```sh
-  sudo apt-get install <package>
-  sudo apt-get update
-  ```
-- **Apt** is CLI for package management on Ubuntu/Debian/Mint.
+### **Network & Port Conflicts**
 
-***
+  * **Identify:** `lsof -i :3000` (or `:8000`)
+  * **Kill:** `kill -9 <PID>`
 
-## **Conda & Fish Shell Tips**
+### **SSL Python/Requests Fix**
 
-- Conda + Fish Shell has issues.  
-  [StackOverflow Guide](https://stackoverflow.com/questions/34280113/add-conda-to-path-in-fish/34280406#34280406)
+Add to shell config to resolve certificate errors:
 
-***
-
-## **Browser Extensions**
-
-- (Firefox) HTTPS Everywhere, Grammarly, Wikiwand, Adblock Plus, Momentum, Hoxx VPN, Onetab, English Popup Dictionary
-- (Chrome) [Web Search Navigator](https://github.com/infokiller/web-search-navigator) (keyboard shortcuts for web surfing)
-
-***
-
-## **Node.js and Package Managers**
-
-- **NVM (Node Version Manager)**
-  1. List installed: `nvm ls`
-  2. Install version: `nvm install 16.14`
-  3. Use version: `nvm use 16.14`
-  4. Verify: `node -v`
-  5. Install deps: `yarn install`
-  - Settings are local to each terminal
-
-- **Yarn vs npm:**  
-  Stick to one per project; delete the other’s lock file before installing.
-
-***
-
-## **Port Conflicts**
-
-- Find process: `lsof -i :3000`
-- Kill process: `kill -9 <PID>`
-
-***
-
-## **VS Code Shortcuts**
-
-- Collapse all code blocks: `Ctrl+K`, then `Ctrl+0`
-- Unfold all: `Ctrl+K`, then `Ctrl+J`
-- Collapse Explorer directories: 
-  - Focus Explorer: `Ctrl+Shift+E` 
-  - Collapse: `Ctrl+Left Arrow`
- 
-## **VS Code Settings**
-
-- Html Preview
-```
-{
-    "editor.formatOnSave": true,
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    }
-}
-```
-
-***
-
-## **Common Commands**
-
-- Show tree excluding dirs:  
-  `tree -I "node_modules|env|build|dist"`
-- Find process using port:  
-  `lsof -i :8000`
-- Kill process:  
-  `kill -9 <PID>`
-
-***
-
-## **SSL Python Fixes**
-
-Add to your shell config:
 ```sh
 export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
-source ~/.bashrc
 ```
-Fixes most requests/SSL issues.
 
-***
+### **The "Clean" Alias (WSL/Docker/Node)**
 
-## **GitHub SSH Setup Cheatsheet**
+Add this to `~/.bashrc` or `~/.config/fish/config.fish`:
 
-> Quick steps to configure SSH for GitHub on a new device.
-
-### 1. Check for Existing SSH Keys
-```sh
-ls -al ~/.ssh
-```
-### 2. Generate a New SSH Key
-```sh
-ssh-keygen -t ed25519 -C "your_email@example.com"
-# Or:
-# ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-```
-### 3. Add SSH Key to ssh-agent
-```sh
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
-```
-### 4. Add SSH Key to GitHub
-```sh
-cat ~/.ssh/id_ed25519.pub
-```
-Go to GitHub → Settings → SSH and GPG keys → **New SSH Key**. Paste and save.
-
-### 5. Test SSH Connection
-```sh
-ssh -T git@github.com
-```
-### 6. Clone via SSH
-```sh
-git clone git@github.com:username/repo.git
-```
-What happens invisibly when you type, ssh root@192.0.0.1
-1. Server encrypts secret: "Prove you're you: 7x=42"
-2. Your laptop decrypts: "x=6 ✓ Math works!"
-3. Server checks: "Correct! Welcome aboard!"
-
-Harden Security (Critical) - Create a non-root user
-adduser mushtaq  # follow prompts
-usermod -aG sudo mushtaq  # grant sudo access (Ubuntu)
-as root, pasted public key from Hetzner here.
-# 1. Create .ssh directory for mushtaq
-mkdir -p /home/mushtaq/.ssh
-
-# 2. Move the public key into authorized_keys
-mv /home/mushtaq/id_ed25519.pub /home/mushtaq/.ssh/authorized_keys
-
-# 3. Set correct ownership (critical!)
-chown -R mushtaq:mushtaq /home/mushtaq/.ssh
-
-# 4. Set secure permissions (critical!)
-chmod 700 /home/mushtaq/.ssh
-chmod 600 /home/mushtaq/.ssh/authorized_keys
-Test
-ssh mushtaq@[IPV6]
-***
-
-## **Hackathon Visual Tools**
-
-- [Napkin.ai](https://www.napkin.ai/) — generate visuals from text
-- [GitDiagram.com](https://gitdiagram.com/) — visualize code repos
-
-***
-
-## **Blockchain Tools**
-
-- [mempool.space](https://mempool.space/de/)
-- [Antpool.com](https://v3.antpool.com/home)
-- [Bitnodes.io](https://bitnodes.io/nodes/live-map/)
-- [Biteaddress.org](https://www.biteaddress.org/)
-
-***
-
-## **Uncommon Job Portals**
-
-- [CyberForum Jobbörse](https://www.cyberforum.de/jobboerse)
-- [join-nxtgn.com](https://join-nxtgn.com/jobportal/)
-- [Developer Media Jobs](https://jobs.developer-media.de/Suchergebnis.html?jsjn=ai&jsjnid=&jsjo=&jsjoid=)
-- [Computersware](https://jobs.computerwoche.de/Job/Software-Developer-w-m-d.1837525075.html?jssi=43153135764385159&jsix=7&jssc=0)
-- [South Germany](https://stellenmarkt.sueddeutsche.de/job/softwareentwickler-fuer-kuenstliche-intelligenz-machine-learning-engineer-m-w-d.1834922385.html)
-
-***
-
-  du -h --max-depth=1 . | sort -h
-
-Windows
-$ py --list
-Installed Pythons found by C:\windows\py.exe Launcher for Windows
- -3.9-64 *
- -3.14-64
- py -3.9 -m venv venv
- source venv/Scripts/activate
-
-Tab Does not work ON WSL Vs code
- ctrl+shift+p (opens command pallete), then search and select 'Toggle Tab Moves Focus'.
-
-
- Termux SSH
- ssh username@<ipaddress> -p 8022
-
-
-
-CI/CD Best Practices
-
-Use small base images (Alpine)
-
-Proper tagging (v1.0, not just latest)
-
-Remove unused images regularly
-
-Keep Dockerfiles minimal & clean
-
-
-Tech Note: Software KVM (Microsoft PowerToys)
-Connection Fix (Public/Shared Wi-Fi):
-
-Search "Allow an app through Windows Firewall" > Change settings.
-
-Find PowerToys.MouseWithoutBorders and check the Public box for all entries.
-
-Pro-tip: Disable VPN and use the IP Address if the PC Name fails to connect.
-
-Functionality:
-
-Share one mouse/keyboard, sync clipboards, and drag-copy files between PCs (app windows cannot be dragged across).
-
-
-
-# 💾 WSL2 & Docker Disk Space Guide
-
-**Two WSL2 "balloons" silently eat SSD. Clean monthly, shrink quarterly.**
-
-## 🚨 Symptoms (fix NOW)
-- Windows <15GB free
-- Task Manager 100% Disk
-- WSL/Docker "No space left"
-
-## 🧹 Monthly Clean (add to ~/.bashrc)
 ```bash
 alias clean="rm -rf ~/.cache/* && npm cache clean --force && docker system prune -a --volumes -f"
-clean
-🔧 Shrink VHDX (when <20GB free)
-powershell
+```
+
+### **Find Largest Files**
+
+```sh
+find . -type f -exec du -h {} + | sort -rh | head -20
+```
+
+-----
+
+## **4. GitHub & Remote Access (SSH)**
+
+1.  **Check:** `ls -al ~/.ssh`
+2.  **Generate:** `ssh-keygen -t ed25519 -C "email@example.com"`
+3.  **Agent:** `eval "$(ssh-agent -s)"` && `ssh-add ~/.ssh/id_ed25519`
+4.  **Connect:** `ssh -T git@github.com`
+5.  **Termux:** `ssh username@<ipaddress> -p 8022`
+
+### **Server Hardening (New User Setup)**
+
+1.  `adduser mushtaq`
+2.  `usermod -aG sudo mushtaq`
+3.  **Permissions (Critical):**
+      * `chmod 700 ~/.ssh`
+      * `chmod 600 ~/.ssh/authorized_keys`
+      * `chown -R mushtaq:mushtaq ~/.ssh`
+
+-----
+
+## **5. Software Guides & Shortcuts**
+
+### **VS Code**
+
+  * **Fold/Unfold Code:** `Ctrl+K, 0` / `Ctrl+K, J`
+  * **Collapse Explorer:** `Ctrl+Shift+E` → `Ctrl+Left Arrow`
+  * **WSL Tab Fix:** `Ctrl+Shift+P` \> *Toggle Tab Moves Focus*
+  * **HTML Formatter Settings:**
+
+<!-- end list -->
+
+```json
+{
+    "editor.formatOnSave": true,
+    "[html]": { "editor.defaultFormatter": "vscode.html-language-features" }
+}
+```
+
+### **WSL2 Disk Shrink (Windows PowerShell)**
+
+```powershell
 wsl --shutdown
 diskpart
-select vdisk file="[YOUR_PATH]\ext4.vhdx"
+# select vdisk file="C:\PATH\TO\ext4.vhdx"
 attach vdisk readonly
 compact vdisk
 detach vdisk
-exit
-📈 Example Results
-text
-Ubuntu: 88GB → 59GB (-29GB)
-Docker: 27GB → 22GB (-5GB)
 ```
 
-RemovePaywalls.com: Prepend the site URL with removepaywalls.com/ or use its browser extensions. 
-Bypass Paywalls Clean: A widely used Chrome/Firefox extension that bypasses many paywalls, including Bloomberg’s. 
-Reader Mode: Use your browser’s reader view to strip away paywall scripts. 
-Archive.today (or archive.ph): Load the article through the archiving service to access content.
+### **Software KVM (Microsoft PowerToys)**
 
-German Resources
-https://leichte-sprache.de/
-https://www1.wdr.de/hilfe/leichte-sprache/index.html
-https://learngerman.dw.com/de/24012026-langsam-gesprochene-nachrichten/a-75639506
+Fix: Firewall > Allow App > PowerToys.MouseWithoutBorders > Check Public.
+
+-----
+
+## **6. Browsing & Resources**
+
+### **Extensions**
+
+  * **Core:** HTTPS Everywhere, Grammarly, Wikiwand, Adblock Plus, OneTab, Hoxx VPN.
+  * **Dev:** Web Search Navigator (Keyboard shortcuts), Wappalyzer (Stack identifier).
+  * **Research:** RemovePaywalls.com, Bypass Paywalls Clean, Archive.ph, [Google Ngrams](https://books.google.com/ngrams/)
+
+### **Reading List**
+
+  * [Knowing Machines](https://knowingmachines.org/models-all-the-way#section5)
+  * [ChatGPT is a Blurry JPEG](https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web)
+  * [LLM Token Prediction Visualizer](https://static-assets.codecademy.com/Courses/intro-to-llms/next_token_prediction/llm_next_token_prediction.html)
+
+### **German Language Support**
+
+  * [Leichte Sprache (WDR)](https://www1.wdr.de/hilfe/leichte-sprache/index.html)
+  * [DW Langsam gesprochene Nachrichten](https://learngerman.dw.com/de/24012026-langsam-gesprochene-nachrichten/a-75639506)
+
+-----
+
+## **7. Specialized Tools**
+
+  * **Visuals:** [Napkin.ai](https://www.napkin.ai/), [GitDiagram.com](https://gitdiagram.com/)
+  * **Blockchain:** [mempool.space](https://mempool.space/), [Bitnodes](https://www.google.com/search?q=https://bitnodes.io/), [Biteaddress](https://www.biteaddress.org/), [Antpool](https://v3.antpool.com/home)
+  * **Jobs:** [CyberForum](https://www.cyberforum.de/jobboerse), [Join-nxtgn](https://join-nxtgn.com/jobportal/), [Developer Media](https://jobs.developer-media.de/Suchergebnis.html?jsjn=ai&jsjnid=&jsjo=&jsjoid=), [Computerwoche (Dev Job)](https://jobs.computerwoche.de/Job/Software-Developer-w-m-d.1837525075.html?jssi=43153135764385159&jsix=7&jssc=0), [South Germany (AI/ML Job)](https://stellenmarkt.sueddeutsche.de/job/softwareentwickler-fuer-kuenstliche-intelligenz-machine-learning-engineer-m-w-d.1834922385.html).
+
+-----
+
+### 📥 Inbox (Unsorted)
+
+**Version Control your Configs:** Take your shell configs (`.bashrc`, `.fish_config`) and VS Code `settings.json` and put them in a **private GitHub "Dotfiles" repository**. That way, on a new laptop, you just `git clone` and your whole environment is ready in seconds.
+
+**Use a Password Manager for SSH keys:** Don't just store the steps; store your non-sensitive public keys and configurations in something like Bitwarden or 1Password so you can copy-paste them instantly.
