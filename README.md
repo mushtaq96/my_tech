@@ -147,3 +147,8 @@ Fix: Firewall > Allow App > PowerToys.MouseWithoutBorders > Check Public.
 **Version Control your Configs:** Take your shell configs (`.bashrc`, `.fish_config`) and VS Code `settings.json` and put them in a **private GitHub "Dotfiles" repository**. That way, on a new laptop, you just `git clone` and your whole environment is ready in seconds.
 
 **Use a Password Manager for SSH keys:** Don't just store the steps; store your non-sensitive public keys and configurations in something like Bitwarden or 1Password so you can copy-paste them instantly.
+
+Use File Explorer to find large files:
+Open File Explorer → Go to C: → Search bar: size:gigantic
+
+sudo du -h --max-depth=2 /home/$USER | sort -hr | head -n 20
